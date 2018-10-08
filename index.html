@@ -15,7 +15,7 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
-    <link rel="shortcut icon" type="image/x-icon" href="https://static.thenounproject.com/png/188518-200.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/Craft/CraftLogo.png">
 
     <style type="text/css">
 
@@ -35,7 +35,7 @@
             font-size: 16px;
             margin: 4px 50px;
             cursor: pointer;
-            font-size: 64px;
+            font-size: 56px;
             border-radius: 12px;
             transition-duration: 0.4s;
         }
@@ -63,11 +63,11 @@
                 
                 <ul class="header-nav__list">
                     <li class="current"><a class="smoothscroll"  href="#home">Home</a></li>
-                    <li><a class="smoothscroll"  href="#">Concepts</a></li>
-                    <li><a href="#">Repository</a></li>
+                    <li><a class="smoothscroll" href="#repository">Repository</a></li>
+                    <li><a class="smoothscroll" href="#concepts">Concepts</a></li>
                     <li><a class="smoothscroll" href="#reports">Reports</a></li>
-                    <li><a class="smoothscroll" href="#">About Us</a></li>
-                    <li><a class="smoothscroll" href="#">References</a></li>
+                    <li><a class="smoothscroll" href="#aboutus">About Us</a></li>
+                    <li><a class="smoothscroll" href="#references">References</a></li>
                 </ul>
 
                 <ul class="header-nav__social">
@@ -119,20 +119,17 @@
 
                 <div class="home-content__buttons">
 
-                    <a href="#" class="smoothscroll btn btn--stroke">
-                        Concepts
-                    </a>
-                     <a href="#" class="btn btn--stroke">
+                    <a href="#repository" class="smoothscroll btn btn--stroke">
                         Repository
+                    </a>
+                     <a href="#concepts" class="smoothscroll btn btn--stroke">
+                        Concepts
                     </a>
                    <a href="#reports" class="smoothscroll btn btn--stroke">
                         Reports
                     </a>
-                    <a href="#" class="smoothscroll btn btn--stroke">
+                    <a href="#aboutus" class="smoothscroll btn btn--stroke">
                         About Us
-                    </a>
-                     <a href="#" class="smoothscroll btn btn--stroke">
-                        References
                     </a>
 
                 </div>
@@ -141,8 +138,8 @@
 
 
             <div class="home-content__scroll">
-                <a href="#reports" class="scroll-link smoothscroll">
-                    <span>Scroll Down</span>
+                <a href="#references" class="scroll-link smoothscroll">
+                    <span>References</span>
                 </a>
             </div>
 
@@ -168,9 +165,79 @@
             </li>
         </ul> 
 
-    </section> 
+    </section>
 
-<!-- reports
+    <!-- repository
+    ================================================== -->
+    <section id='repository' class="s-about">
+
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead subhead--dark">What We Researched</h3>
+                <h1 class="display-1 display-1--light">Repository</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="about__line"></div>
+
+    </section> <!-- end s-repository -->
+
+    <!-- concepts
+    ================================================== -->
+    <section id='concepts' class="s-works">
+
+        <div class="intro-wrap">
+                
+            <div class="row section-header has-bottom-sep light-sep" data-aos="fade-up">
+                <div class="col-full">
+                    <h3 class="subhead">How We Structure It</h3>
+                    <h1 class="display-2 display-2--light">Concepts</h1>
+                </div>
+            </div> <!-- end section-header -->
+
+        </div> <!-- end intro-wrap -->
+
+        <div class="row works-content">
+            <div class="col-full masonry-wrap">
+                <div class="masonry">
+    
+                    <div class="masonry__brick" data-aos="fade-up" align="center">
+                        <div class="item-folio">
+                                
+                            <div class="item-folio__thumb">
+                                <a href="images/Craft/CONCEPTS.jpg" class="thumb-link" title="Conceptual Map" data-size="1050x700">
+                                    <img src="images/Craft/CONCEPTS.jpg" 
+                                         srcset="images/Craft/CONCEPTS.jpg 1x, Craft/CONCEPTS.jpg 2x" alt="">
+                                </a>
+                            </div>
+    
+                            <div class="item-folio__text">
+                                <h3 class="item-folio__title">
+                                    Conceptual Map
+                                </h3>
+                                <p class="item-folio__cat">
+                                    Craft
+                                </p>
+                            </div>
+    
+                            <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+                                <i class="icon-link"></i>
+                            </a>
+    
+                            <div class="item-folio__caption">
+                                <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                            </div>
+    
+                        </div>
+                    </div> <!-- end masonry__brick -->
+
+                </div> <!-- end masonry -->
+            </div> <!-- end col-full -->
+        </div> <!-- end concepts-content -->
+
+    </section> <!-- end s-concepts -->
+
+    <!-- reports
     ================================================== -->
     <section id='reports' class="s-services">
 
@@ -188,6 +255,52 @@
         </div>
 
     </section> <!-- end s-reports -->
+
+    <!-- about us
+    ================================================== -->
+    <section id="aboutus" class="s-clients">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Who We Are</h3>
+                <h1 class="display-2">About Us</h1>
+            </div>
+        </div> <!-- end section-header -->
+
+        <div class="row clients-outer" data-aos="fade-up">
+            <div class="col-full">
+                <div class="clients">
+                    
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/apple.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/atom.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/blackberry.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/dropbox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/envato.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/firefox.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/joomla.png" /></a>
+                    <a href="#0" title="" class="clients__slide"><img src="images/clients/magento.png" /></a>
+                     
+                </div> <!-- end about us -->
+            </div> <!-- end col-full -->
+        </div> <!-- end about us-outer -->
+
+    </section> <!-- end s-about us -->
+
+    <!-- references
+    ================================================== -->
+    <section id="references" class="s-contact">
+
+        <div class="overlay"></div>
+        <div class="contact__line"></div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 class="subhead">Our Bibliography</h3>
+                <h1 class="display-2 display-2--light">References</h1>
+            </div>
+        </div>
+
+    </section> <!-- end s-references -->
 
     <footer>
 
