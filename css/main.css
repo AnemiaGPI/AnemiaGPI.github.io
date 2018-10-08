@@ -2519,10 +2519,19 @@ html.no-csstransitions .home-content__main {
 }
 
 .masonry .grid-sizer, .masonry__brick {
-    width: 100%;
+    width: 50%;
 }
 
 .masonry__brick {
+    float: left;
+    padding: 0;
+}
+
+.masonry .grid-sizer, .masonry__brick1 {
+    width: 100%;
+}
+
+.masonry__brick1 {
     float: left;
     padding: 0;
 }
@@ -2715,6 +2724,10 @@ html.no-csstransitions .home-content__main {
         margin-top: -25.2rem;
     }
     .masonry__brick {
+        float: none;
+        width: 100%;
+    }
+    .masonry__brick1 {
         float: none;
         width: 100%;
     }
