@@ -31,7 +31,6 @@
             padding: 15px 32px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
             font-size: 16px;
             margin: 4px 50px;
             cursor: pointer;
@@ -98,6 +97,7 @@
             margin-right: 50px;
             margin-left: 50px; 
             margin-bottom: 10px;
+            display: inline-block;
         }
 
         .image {
@@ -118,9 +118,46 @@
             transition: .75s ease;
         }
 
+        .container .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #39b54a;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 110%;
+            left: 50%;
+            margin-left: -60px;
+            font-size: 20px;
+            
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
         .container:hover .overlay {
             bottom: 0;
             height: 100%;
+        }
+
+
+        .container .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #39b54a transparent;
+        }
+
+        .container:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
         }
 
         .text {
@@ -410,15 +447,18 @@
         </div>
 
         <div class="we">
-            <center><div class="container">
+            <center>
+            <div class="container">
                 
                 <img src="images\Craft\profile.jpg" alt="Avatar" class="image">
 
                 <div class="overlay">
                     <div class="text">
                         <h2>Frank Britto</h2>
+                        <p align="center"><b>Areas of interest:</b></p>
                     </div>
                 </div>
+                <span class="tooltiptext"></span>
             </div>
 
             <div class="container">
@@ -428,8 +468,10 @@
                 <div class="overlay">
                     <div class="text">
                         <h2>Alexandra Calvo</h2>
+                        <p align="center"><b>Areas of interest:</b></p>
                     </div>
                 </div>
+                <span class="tooltiptext"></span>
             </div>
 
             <div class="container">
@@ -439,8 +481,10 @@
                 <div class="overlay">
                     <div class="text">
                         <h2>Claudia Montufar</h2>
+                        <p align="center"><b>Areas of interest:</b></p>
                     </div>
                 </div>
+                <span class="tooltiptext"></span>
             </div>
 
             <br>
@@ -452,8 +496,10 @@
                 <div class="overlay">
                     <div class="text">
                         <h2>Erika Uchuya</h2>
+                        <p align="center"><b>Areas of interest:</b></p>
                     </div>
                 </div>
+                <span class="tooltiptext"></span>
             </div>
 
             <div class="container">
@@ -466,8 +512,10 @@
                         <p align="center"><b>Areas of interest:<br>Mechanics, biomechanics,<br>electronics, rehabilitation,<br>soft robotics, formal<br>sciences and web design.</b></p>
                     </div>
                 </div>
+                <span class="tooltiptext"></span>
             </div>
-        </div></center>
+            </center>
+        </div>
 
     </section> <!-- end s-about us -->
 
