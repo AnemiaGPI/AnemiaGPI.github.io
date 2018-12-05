@@ -63,6 +63,66 @@
             margin-top: 20px;
             width: 70px;
         }
+        .button {
+            background-color: #39b54a;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 4px 50px;
+            cursor: pointer;
+            font-size: 56px;
+            border-radius: 12px;
+            transition-duration: 0.4s;
+            position: relative;
+            display: inline-block;
+        }
+
+        .button .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #39b54a;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 1;
+            top: 115%;
+            left: 50%;
+            margin-left: -60px;
+            font-size: 20px;
+            
+            /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+
+        .button .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent #39b54a transparent;
+        }
+
+        .button:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .button:hover {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #39b54a;
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
 
         table {
             border-collapse: collapse;
@@ -161,12 +221,6 @@
 
             </div>
 
-            <div class="home-content__scroll">
-                <a href="#references" class="scroll-link smoothscroll">
-                    <span>References</span>
-                </a>
-            </div>
-
             <div class="home-content__line"></div>
 
         </div> 
@@ -191,40 +245,23 @@
 
     </section> 
 
-    
+<section id='VDI' class="s-services">
 
-    <!-- references
-    ================================================== -->
-    <footer id="references">
-
-        <div class="row section-header" data-aos="fade-up">
+        <div class="row section-header has-bottom-sep" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Our Bibliography</h3>
-                <h1 class="display-2 display-2--light">References</h1>
+                <h3 class="subhead">What We Did</h3>
+                <h1 class="display-2">Solution Idea</h1>
             </div>
+        </div> <!-- end section-header -->
 
-            <div class="row about-desc" data-aos="fade-up">
-                <div class="col-full">
-                    <p>
-                        <font size="4px"><ul>                           
-                            <li><p align="left">[22] Cardero Reyes Y, Sarmiento González R, Selva Capdesuñer A. Importancia del consumo de hierro y vitamina C para la prevención de anemia ferropénica [artículo en línea]. MEDISAN 2009; 13(6) -http://bvs.sld.cu/revistas/san/vol13_6_09/san14609.htm-[consulta: 24/10/18].</p></li>
-                            <li><p align="left">[23] Cardero Reyes, Sarmiento González, & Selva Capdesuñer, 2009</p></li>
-                            <li><p align="left">[24] Vila, 2007</p></li>
-                            <li><p align="left">[25] Orozco, Romero, Vásquez, & Nápoles, 2010</p></li>
-                            <li><p align="left">[26] ARROYO-LAGUNA, Juan. Hacia un Perú sin anemia. Rev. perú. med. exp. salud publica [online]. 2017, vol.34, n.4, pp.586-587. ISSN 1726-4634.  http://dx.doi.org/10.17843/rpmesp.2017.344.3279. </p></li>
-                            <li><p align="left">[27] El sistema de salud del Perú: situación actual y estrategias para orientar la extensión de la cobertura contributiva. Oscar Cetrángolo, Fabio Bertranou, Luis Casanova y Pablo Casalí. Lima: OIT/ Oficina de la OIT para los Países Andinos, 2013. 184 p.</p></li>
-                            <li><p align="left">[28] INEI (2012):</p></li>
-                            <li><p align="left">[29] Villaquirán, Z., Burbano, P., Osorio-Mora, O., et al (2018) Diseño de un alimento infantil listo para consumir fortificado con hierro a base de arveja (Pisum sativum). Univ. Salud, 20(1). doi: http://dx.doi.org/10.22267/rus.182001.104</p></li>
-                            <li><p align="left">[30] Mansilla, J., Whittembury, A., Chuquimbalqui, R., et al (2017) Modelo para mejorar la anemia y el cuidado infantil en el ámbito rural. Rev Panam Salud Publica, 41:e112. doi: 10.26633/RPSP.2017.112</p></li>
-                            <li><p align="left">[31] Soncco-Sucapuca, M., Brousset-Minaya, M., Pumacahua-Ramos, A. (2018) Impacto de un programa educativo incluyendo un pan fortificado para reducir los niveles de anemia en niños escolares de Yocará, Puno-Perú. Rev. investig. Altoandin, 20(1). doi: http://dx.doi.org/10.18271/ria.2018.331</p></li>
-                            <li><p align="left">[32] Duran, E., Villalobos, C., Churio, O., Pizarro, F., Valenzuela, C (2017) Encapsulación de hierro: Otra estrategia para la prevención o tratamiento de la anemia por deficiencia de hierro. Rev. chil. nutr., 44(3). doi: http://dx.doi.org/10.4067/s0717-75182017000300234</p></li>
-                        </ul></font>
-                    </p>
-                </div>
-            </div>
+        <div align="center">
+                <a href="H1.html" class="button">S1<span class="tooltiptext">Holi</span></a>
+                <a href="H2.html" class="button">S2<span class="tooltiptext">Define</span></a>
+                <a href="H3.html" class="button">S3<span class="tooltiptext">Ideate</span></a>
+                <a href="H3.html" class="button">S4<span class="tooltiptext">Ideate</span></a>
         </div>
 
-    </footer> <!-- end s-references -->
+    </section>    
 
     <footer>
 
